@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Login Disini"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@+id/logo"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Silahkan Login Untuk Melanjutkan Ke Aplikasi"
+        android:layout_below="@+id/text1"/>
+    <EditText
+        android:id="@+id/noktp"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/arf_text_mod"
+        android:maxLength="16"
+        android:lines="1"
+        android:maxLines="1"
+        android:minLines="1"
+        android:inputType="number"
+        android:hint="NO. KTP"
+        android:padding="16dp"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noktp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/arf_text_mod"
+        android:maxLength="16"
+        android:lines="1"
+        android:maxLines="1"
+        android:minLines="1"
+        android:inputType="number"
+        android:hint="PASSWORD"
+        android:padding="16dp"/>
+    <TextView
+        android:id="@+id/lupa_password"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:text="Lupa Password?"
+        android:textSize="12dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/Blue"
+        android:clickable="true"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lupa_password"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:background="@color/DeepSkyBlue"
+        android:padding="16dp"/>
+
+
+</RelativeLayout>
