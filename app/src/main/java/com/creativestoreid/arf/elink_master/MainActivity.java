@@ -2,6 +2,7 @@ package com.creativestoreid.arf.elink_master;
 
 import android.os.Bundle;
 
+import com.creativestoreid.arf.elink_master.ui.home.HomeFragment;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -29,6 +30,7 @@ import android.view.Menu;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private AppBarConfiguration mAppBarConfiguration;
+    private Object HomeFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,8 +80,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if(id == R.id.nav_home){
+            HomeFragment homeFragment = new HomeFragment();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.nav_host_fragment, homeFragment);
+            fragmentTransaction.commit();
 
         }else if(id == R.id.nav_pendataanwarga){
+            PendataanWarga pendataanwarga = new PendataanWarga();
+            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+            fragmentTransaction.replace(R.id.nav_host_fragment, pendataanwarga);
+            fragmentTransaction.commit();
 
         }else if(id == R.id.nav_pendataanwilayah){
 
