@@ -21,7 +21,7 @@
         android:layout_below="@+id/logo"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="23dp"
-        android:text="Login Disini"
+        android:text="Login Disini Aja"
         android:textSize="20dp"
         android:textStyle="bold" />
 
