@@ -13,22 +13,24 @@
         android:layout_height="200dp"
         android:src="@drawable/logo"
         android:layout_centerHorizontal="true"/>
+
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_below="@+id/logo"
         android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
         android:text="Login Disini"
-        android:textStyle="bold"
         android:textSize="20dp"
-        android:layout_below="@+id/logo"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:text="Silahkan Login Untuk Melanjutkan Ke Aplikasi"
+        android:text="Login Aplikasi"
         android:layout_below="@+id/text1"/>
     <EditText
         android:id="@+id/noktp"
