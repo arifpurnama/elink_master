@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_pendataanwarga, R.id.nav_pendataanwilayah,
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_pendataanwilayah,
                 R.id.nav_pendataantempattinggal, R.id.nav_informasiumum, R.id.nav_laporanwarga, R.id.nav_about)
                 .setDrawerLayout(drawer)
                 .build();
@@ -85,11 +85,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             fragmentTransaction.replace(R.id.nav_host_fragment, homeFragment);
             fragmentTransaction.commit();
 
-        }else if(id == R.id.nav_pendataanwarga){
-            PendataanWarga pendataanwarga = new PendataanWarga();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.nav_host_fragment, pendataanwarga);
-            fragmentTransaction.commit();
+        }else if(id == R.id.nav_gallery){
+
 
         }else if(id == R.id.nav_pendataanwilayah){
 

@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.creativestoreid.arf.elink_master.ui.gallery.GalleryFragment"
+        android:name="com.creativestoreid.arf.elink_master.ui.Pendataan.PendataanFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_data_warga" />
 
     <fragment
         android:id="@+id/nav_slideshow"

@@ -1,16 +1,16 @@
-package com.creativestoreid.arf.elink_master.ui.gallery;
+package com.creativestoreid.arf.elink_master.ui.Pendataan;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class PendataanViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+    public PendataanViewModel() {
+        //mText = new MutableLiveData<>();
+       // mText.setValue("INPUT DATA WARGA");
     }
 
     public LiveData<String> getText() {

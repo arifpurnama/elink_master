@@ -9,7 +9,7 @@
             android:icon="@drawable/ic_house"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_pendataanwarga"
+            android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_input"
             android:title="@string/pendataan_warga" />
         <item
