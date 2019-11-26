@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PendataanWilayah">
+    tools:context=".fragments.PendataanWilayah">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Pendataan Warga" />
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="Pendataan Wilayah Fragment"/>
 
 </FrameLayout>
