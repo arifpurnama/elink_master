@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_image"
     android:orientation="vertical"
     tools:context=".LoginActivity">
 
@@ -11,79 +12,98 @@
         android:id="@+id/logo"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:src="@drawable/logo"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="108dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="131dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="23dp"
-        android:text="Login Disini Aja"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="139dp"
+        android:text="Silahkan Login"
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:text="Login Aplikasi"
-        android:layout_below="@+id/text1"/>
     <EditText
         android:id="@+id/noktp"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text2"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
         android:background="@drawable/arf_text_mod"
-        android:maxLength="16"
+        android:hint="NO. KTP"
+        android:inputType="number"
         android:lines="1"
+        android:maxLength="16"
         android:maxLines="1"
         android:minLines="1"
-        android:inputType="number"
-        android:hint="NO. KTP"
-        android:padding="16dp"/>
+        android:padding="16dp" />
+
     <EditText
         android:id="@+id/password"
-        android:layout_width="320dp"
+        android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/noktp"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
         android:background="@drawable/arf_text_mod"
-        android:maxLength="16"
+        android:hint="PASSWORD"
+        android:inputType="number"
         android:lines="1"
+        android:maxLength="16"
         android:maxLines="1"
         android:minLines="1"
-        android:inputType="number"
-        android:hint="PASSWORD"
-        android:padding="16dp"/>
+        android:padding="16dp" />
+
     <TextView
         android:id="@+id/lupa_password"
         android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
         android:layout_below="@+id/password"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:clickable="true"
         android:text="Lupa Password?"
-        android:textSize="12dp"
         android:textAlignment="textEnd"
         android:textColor="@color/Blue"
-        android:clickable="true"/>
+        android:textSize="12dp" />
+
     <Button
-        android:layout_width="320dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
         android:layout_below="@id/lupa_password"
-        android:layout_marginTop="30dp"
-        android:layout_centerHorizontal="true"
-        android:text="LOGIN"
-        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="156dp"
         android:background="@color/DeepSkyBlue"
-        android:padding="16dp"/>
+        android:padding="16dp"
+        android:text="LOGIN"
+        android:textSize="20dp" />
 
 
 </RelativeLayout>
