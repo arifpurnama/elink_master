@@ -12,32 +12,32 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_warga"
         android:name="com.creativestoreid.arf.elink_master.ui.Pendataan.PendataanFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/menu_warga"
         tools:layout="@layout/fragment_data_warga" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.creativestoreid.arf.elink_master.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_wilayah"
+        android:name="com.creativestoreid.arf.elink_master.ui.wilayah.WilayahFragment"
+        android:label="@string/menu_wilayah"
+        tools:layout="@layout/fragment_data_wilayah" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.creativestoreid.arf.elink_master.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_rumah"
+        android:name="com.creativestoreid.arf.elink_master.ui.rumah.RumahFragment"
+        android:label="@string/menu_rumah"
+        tools:layout="@layout/fragment_data_rumah" />
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="com.creativestoreid.arf.elink_master.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:name="com.creativestoreid.arf.elink_master.ui.rumah.RumahFragment"
+        android:label="@string/menu_umum"
+        tools:layout="@layout/fragment_data_rumah" />
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="com.creativestoreid.arf.elink_master.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:name="com.creativestoreid.arf.elink_master.ui.wilayah.WilayahFragment"
+        android:label="@string/menu_lapor"
+        tools:layout="@layout/fragment_data_wilayah" />
 </navigation>

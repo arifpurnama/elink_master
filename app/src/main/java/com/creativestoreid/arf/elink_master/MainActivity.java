@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_pendataanwilayah,
-                R.id.nav_pendataantempattinggal, R.id.nav_informasiumum, R.id.nav_laporanwarga, R.id.nav_about)
+                R.id.nav_home, R.id.nav_warga, R.id.nav_wilayah,
+                R.id.nav_rumah, R.id.nav_umum, R.id.nav_lapor, R.id.nav_about)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -80,21 +80,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         if(id == R.id.nav_home){
-            HomeFragment homeFragment = new HomeFragment();
-            FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.nav_host_fragment, homeFragment);
-            fragmentTransaction.commit();
 
-        }else if(id == R.id.nav_gallery){
+        }else if(id == R.id.nav_warga){
 
+        }else if(id == R.id.nav_wilayah){
 
-        }else if(id == R.id.nav_pendataanwilayah){
+        }else if(id == R.id.nav_rumah){
 
-        }else if(id == R.id.nav_pendataantempattinggal){
+        }else if(id == R.id.nav_umum){
 
-        }else if(id == R.id.nav_informasiumum){
-
-        }else if(id == R.id.nav_laporanwarga){
+        }else if(id == R.id.nav_lapor){
 
         }else if(id == R.id.nav_about){
 

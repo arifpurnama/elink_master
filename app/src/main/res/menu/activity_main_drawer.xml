@@ -9,23 +9,23 @@
             android:icon="@drawable/ic_house"
             android:title="@string/menu_home" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_warga"
             android:icon="@drawable/ic_input"
-            android:title="@string/pendataan_warga" />
+            android:title="@string/menu_warga" />
         <item
-            android:id="@+id/nav_pendataanwilayah"
+            android:id="@+id/nav_wilayah"
             android:icon="@drawable/ic_input"
             android:title="Pendataan Wilayah" />
         <item
-            android:id="@+id/nav_pendataantempattinggal"
+            android:id="@+id/nav_rumah"
             android:icon="@drawable/ic_input"
             android:title="Pendataan Tempat Tinggal" />
         <item
-            android:id="@+id/nav_informasiumum"
+            android:id="@+id/nav_umum"
             android:icon="@drawable/ic_list"
             android:title="Informasi Umum" />
         <item
-            android:id="@+id/nav_laporanwarga"
+            android:id="@+id/nav_lapor"
             android:icon="@drawable/ic_bell"
             android:title="Laporan Warga" />
         <item

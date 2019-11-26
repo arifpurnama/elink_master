@@ -1,4 +1,4 @@
-package com.creativestoreid.arf.elink_master.ui.send;
+package com.creativestoreid.arf.elink_master.ui.rumah;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.creativestoreid.arf.elink_master.R;
 
-public class SendFragment extends Fragment {
+public class RumahFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private RumahViewModel shareViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_send, container, false);
-        final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        shareViewModel =
+                ViewModelProviders.of(this).get(RumahViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_data_rumah, container, false);
+        final TextView textView = root.findViewById(R.id.text_share);
+        shareViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

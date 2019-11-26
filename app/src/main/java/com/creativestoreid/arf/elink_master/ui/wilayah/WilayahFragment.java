@@ -1,4 +1,4 @@
-package com.creativestoreid.arf.elink_master.ui.share;
+package com.creativestoreid.arf.elink_master.ui.wilayah;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.creativestoreid.arf.elink_master.R;
 
-public class ShareFragment extends Fragment {
+public class WilayahFragment extends Fragment {
 
-    private ShareViewModel shareViewModel;
+    private WilayahViewModel wilayahViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        shareViewModel =
-                ViewModelProviders.of(this).get(ShareViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_share, container, false);
-        final TextView textView = root.findViewById(R.id.text_share);
-        shareViewModel.getText().observe(this, new Observer<String>() {
+        wilayahViewModel =
+                ViewModelProviders.of(this).get(WilayahViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_data_wilayah, container, false);
+        final TextView textView = root.findViewById(R.id.text_send);
+        wilayahViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
