@@ -31,9 +31,9 @@
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="com.creativestoreid.arf.elink_master.ui.rumah.RumahFragment"
+        android:name="com.creativestoreid.arf.elink_master.ui.informasi.InformasiFragment"
         android:label="@string/menu_umum"
-        tools:layout="@layout/fragment_data_rumah" />
+        tools:layout="@layout/fragment_data_informasi" />
 
     <fragment
         android:id="@+id/nav_send"
